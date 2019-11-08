@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href=css/reset.css rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
-        <script
-			  src="https://code.jquery.com/jquery-3.2.1.js"
-			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-			  crossorigin="anonymous">
-        </script>
-    </head>
-    <body>
-        <header>
-            <h1>MTA Trains</h1>
-        </header>
-        <main>
-            <div id="wrapper">
-                <div class="start-trip">
-                    <h3>Start Destination</h3>
-                    <div class="lineSelect">
-	                	<label for="line">Line</label>
-                        <select id="startLine" placeholder="select line">
-                            <option val="N">N</option>
-                            <option val="L">L</option>
-                            <option val="6">6</option>
-                            <option val="R">R</option>
-                            <option val="D">D</option>
-                            <option val="T">T</option>
-                        </select>    
-                    </div>
-                    
-                    <div class="lineSelect">
-	                    <label for="station">Station</label>
-						<select id="startStation">
-                    	</select>
-                    </div>
-                    
-                </div>
-                <div class="end-trip">
-                    <h3>End Destination</h3>
-                    <div class="lineSelect">
-	                    <label for="line">Line</label>
-                        <select id="endLine">
-                            <option val="N">N</option>
-                            <option val="L">L</option>
-                            <option val="6">6</option>
-                            <option val="R">R</option>
-                            <option val="D">D</option>
-                            <option val="T">T</option>
-                        </select>
-                    </div>
-                   
-                    <label for="station">Station</label>
-                    <select id="endStation">
-                    </select>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href=css/reset.css rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+			<h1>MTA Trains</h1>
+		</header>
+		<main>
+			<div id="wrapper">
+				<div class="start-trip">
+					<h3>Start Destination</h3>
+					<div class="lineSelect">
+						<label for="line">Line</label>
+						<select id="startLine" placeholder="select line">
+							<option val="N">N</option>
+							<option val="L">L</option>
+							<option val="6">6</option>
+							<option val="R">R</option>
+							<option val="D">D</option>
+							<option val="T">T</option>
+						</select>
+					</div>
 
-                </div>
-            </div>
-            
-            <button id="calcTrip">Calulate trip</button>
+					<div class="lineSelect">
+						<label for="station">Station</label>
+						<select id="startStation" class="Trip"> </select>
+					</div>
+				</div>
+				<div class="end-trip">
+					<h3>End Destination</h3>
+					<div class="lineSelect">
+						<label for="line">Line</label>
+						<select id="endLine">
+							<option val="N">N</option>
+							<option val="L">L</option>
+							<option val="6">6</option>
+							<option val="R">R</option>
+							<option val="D">D</option>
+							<option val="T">T</option>
+						</select>
+					</div>
 
+					<label for="station">Station</label>
+					<select id="endStation" class="Trip"> </select>
+				</div>
+			</div>
+			<h2>
+				A dynamic application using JavaScript manipulation that a user
+				can select an input (train station, train line) and output
+				directions that the train will take to get to destination.
+			</h2>
+			<br /><br />
+			<button id="calcTrip">Calculate Trip</button>
 
 			<div id="">
 				<span id="result"></span>
 			</div>
-            
-        </main>
-    </body>
-    <script src="js/main.js"></script>
+		</main>
+	</body>
+	<script src="js/main.js"></script>
 </html>

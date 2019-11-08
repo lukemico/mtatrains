@@ -1,119 +1,118 @@
 body {
-    text-align: center;
-    margin: 0;
-    background-color: #efefff;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin: 0;
+	background-color: white;
 }
 
 header {
-    background-color: #00A6B3;
-    padding: 30px, 20px;
+	background-color: #f64c72;
+	padding: 30px, 20px;
 }
 
 main {
-    width: 850px;
-    margin: 35px auto;
-    text-align: center;
+	width: 850px;
+	margin: 35px auto;
+	text-align: center;
 }
 
 h1 {
-    font-family: "Raleway";
-    font-weight: 400;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 60px;
-    padding: 20px;
+	font-weight: 400;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 60px;
+	padding: 20px;
 }
 
 h3 {
-    font-family: "Raleway";
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 35px;
-    padding: 10px;
-    color:#fff;
-}
-
-.start-trip {
-    display: inline-block;
-    width: 350px;
-    border-right: 1px solid white;
-    padding-bottom: 15px;
-}
-
-.end-trip {
-    display: inline-block;
-    width: 350px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 35px;
+	padding: 10px;
+	color: #fff;
 }
 
 button {
-    margin: 0 auto;
-    font-size: 20px;
-    padding: 7px;
-    width: 25%;
-    transition-duration: 0.4s;
-    border: 1px #98999b solid;
-    border-radius: 25px;
-    margin: 0 0 30px 23px;
+	margin: 0 auto;
+	font-size: 20px;
+	padding: 7px;
+	width: 25%;
+	transition-duration: 0.4s;
+	color: white;
+	background-color: #2f2fa2;
+	border: 1px #98999b solid;
+	border-radius: 25px;
+	margin: 0 0 30px 23px;
 }
 
 button:hover {
-    background-color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 2px solid white;
+	color: #2f2fa2;
+	background-color: white;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	border: 2px solid #2f2fa2;
 }
 
- label {
-    color: white;
-    font-family: "Raleway";
-    padding: 5px 7px 5px 7px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-overflow: '';
-    text-transform: uppercase;
+label {
+	color: white;
+	padding: 5px 7px 5px 7px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-overflow: "";
+	text-transform: uppercase;
 }
 
 select {
-    background-color: #dedee0;
-    color: black;
-    padding: 5px 7px 5px 7px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-overflow: '';
+	background-color: white;
+	color: black;
+	padding: 5px 7px 5px 7px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-overflow: "";
 }
-
 
 select > option {
-    text-align: center;
+	text-align: center;
 }
 
-#result {
-    font-family: "Raleway";
-    font-size: 25px;
+.start-trip {
+	display: inline-block;
+	width: 350px;
+	border-right: 1px solid white;
+	padding-bottom: 15px;
+}
+
+.end-trip {
+	display: inline-block;
+	width: 350px;
 }
 
 #wrapper {
-
-    padding: 20px;
-    width: 100%;
-    background-color: #2f2648;
-    margin-bottom: 20px;
+	padding: 20px;
+	width: 100%;
+	background-color: #242582;
+	margin-bottom: 20px;
 }
 
 .lineSelect {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  content: " ";
-  clear: both;
-  height: 0;
-  font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+#result {
+	font-size: 16px;
 }
