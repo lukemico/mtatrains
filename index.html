@@ -4,8 +4,15 @@
 		<title></title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+
 		<link href=css/reset.css rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/style2.css" rel="stylesheet" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
 			rel="stylesheet"
@@ -17,60 +24,110 @@
 		></script>
 	</head>
 	<body>
-		<header>
-			<h1>MTA Trains</h1>
-		</header>
 		<main>
-			<div id="wrapper">
-				<div class="start-trip">
-					<h3>Start Destination</h3>
-					<div class="lineSelect">
-						<label for="line">Line</label>
-						<select id="startLine" placeholder="select line">
-							<option val="N">N</option>
-							<option val="L">L</option>
-							<option val="6">6</option>
-							<option val="R">R</option>
-							<option val="D">D</option>
-							<option val="T">T</option>
-						</select>
-					</div>
+			<div class="container">
+				<header
+				class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+			>
+				<a
+					href="/"
+					class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+				>
+					<svg class="bi me-2" width="40" height="32">
+						<use xlink:href="#bootstrap" />
+					</svg>
+					<span class="fs-4">MTA Trains</span>
+				</a>
 
-					<div class="lineSelect">
-						<label for="station">Station</label>
-						<select id="startStation" class="Trip"> </select>
-					</div>
-				</div>
-				<div class="end-trip">
-					<h3>End Destination</h3>
-					<div class="lineSelect">
-						<label for="line">Line</label>
-						<select id="endLine">
-							<option val="N">N</option>
-							<option val="L">L</option>
-							<option val="6">6</option>
-							<option val="R">R</option>
-							<option val="D">D</option>
-							<option val="T">T</option>
-						</select>
-					</div>
-
-					<label for="station">Station</label>
-					<select id="endStation" class="Trip"> </select>
-				</div>
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a href="#" class="nav-link active" aria-current="page">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Trip Planner</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">FAQS</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<main>
+			<div class="container-fluid">
+				<header>
+					<h1 class="heading">Plan your trip</h1>
+					<p class="navbar-brand" href="#">Plan your travel in NSW using the Trip Planner</p>
+				</header>
 			</div>
-			<h2>
-				A dynamic application using JavaScript manipulation that a user
-				can select an input (train station, train line) and output
-				directions that the train will take to get to destination.
-			</h2>
-			<br /><br />
-			<button id="calcTrip">Calculate Trip</button>
+			<div class="album py-5 bg-light">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-md-2 g-4">
+						<div class="col">
+							<div class="card">
+								<img src="images/train-origin.jpg" class="d-block w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Enter Origin</h5>
+									<div class="start-trip">
+										<div class="lineSelect">
+											<label for="line">Line</label>
+											<select id="startLine" placeholder="select line">
+												<option val="N">N</option>
+												<option val="L">L</option>
+												<option val="6">6</option>
+												<option val="R">R</option>
+												<option val="D">D</option>
+												<option val="T">T</option>
+											</select>
+										</div>
 
-			<div id="">
-				<span id="result"></span>
+										<div class="lineSelect">
+											<label for="station">Station</label>
+											<select id="startStation" class="Trip"></select>
+										</div>
+									</div>
+									<p class="card-text">
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<img src="images/train-destination.jpg" class="d-block w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Enter Destination</h5>
+									<div class="end-trip">
+										<div class="lineSelect">
+											<label for="line">Line</label>
+											<select id="endLine">
+												<option val="N">N</option>
+												<option val="L">L</option>
+												<option val="6">6</option>
+												<option val="R">R</option>
+												<option val="D">D</option>
+												<option val="T">T</option>
+											</select>
+										</div>
+
+										<label for="station">Station</label>
+										<select id="endStation" class="Trip"></select>
+									</div>
+									<p class="card-text">
+									</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
 			</div>
 		</main>
+
+		<div class="container-fluid">
+			<button id="calcTrip" class="btn btn-primary">Calculate Trip</button>
+			<div id="result">
+				<span id="result"></span>
+			</div>
+		</div>
 	</body>
 	<script src="js/main.js"></script>
 </html>
